@@ -25,7 +25,6 @@ with open('urls.csv') as file:
                 iframe_policy.append([allow_value, src_value])
              # print("iframe policy data:", iframe_policy)
 
-            # response = requests.get(url)
             permissions_policy = driver.requests[1].response.headers.get("Permissions-Policy")
             #write a conditional to check if the permissions policy is empty or only one = sign is present  
             if permissions_policy != None:
