@@ -25,14 +25,22 @@ with open('urls.csv') as file:
                 iframe_policy.append([allow_value, src_value])
              # print("iframe policy data:", iframe_policy)
 
-            permissions_policy = driver.requests[1].response.headers.get("Permissions-Policy")
+            
+            for request in driver.requests:
+                request_str = (str(request))
+                if  request_str in url :
+                    permissions_policy= request.response.headers.get("Permissions-Policy")
+                else:
+                    continue
+
             #write a conditional to check if the permissions policy is empty or only one = sign is present  
             if permissions_policy != None:
                 permissions_policy_stripped = [policy.split("=") for policy in permissions_policy.split(", ")]
                 policy = [(feature_name, allow_list.strip("()") if "(" in allow_list else allow_list) for feature_name, allow_list in permissions_policy_stripped]
                 policy = [(feature_name, allow_list if allow_list else "") for feature_name, allow_list in policy]
             else:
-                print("No Permissions Policy Found")
+                print("No Permissions Policy Found",str(url))
+                driver.quit()
                 continue
                 
 
@@ -50,6 +58,7 @@ with open('urls.csv') as file:
             policy_from_website = policy
             policy_from_iframe = iframe_policy
             policy_to_check_conflict = []
+
             def check_self_or_none(feature):
                 for item in policy_from_website:
                     if (item[1] == '') or (item[1] == 'self'):
@@ -57,7 +66,11 @@ with open('urls.csv') as file:
                             policy_to_check_conflict.append(item[0])
             for external_item in third_party_feature_and_domain:
                 check_self_or_none(external_item[0])
-            print("The following have potential conflicts: " + str(policy_to_check_conflict)+ " On the following website: " + str(url))
+            if policy_to_check_conflict != []:
+                print("The following have potential conflicts: " + str(policy_to_check_conflict)+ " On the following website: " + str(url))
+            else:
+                print("No conflicts found on " + str(url))
+            driver.quit()
 
         except Exception as e:
             logging.exception(e)
