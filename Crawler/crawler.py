@@ -35,7 +35,6 @@ with open('urls.csv') as file:
                     src_value = iframe.get_attribute("src").replace("https://", "")
                     iframe_policy.append([allow_value, src_value])
                     HasInlinePolicy = True #mesvalue
-                
              # print("iframe policy data:", iframe_policy)
 
             
@@ -44,17 +43,17 @@ with open('urls.csv') as file:
                 print(request_str)
                 if  request_str in url :
                     permissions_policy= request.response.headers.get("Permissions-Policy")
+                    if permissions_policy == None:
+                        HasHeaderPolicy = False
                     HasHeaderPolicy = True #mesvalue
                     permissions_policy_stripped = [headerpolicy.split("=") for headerpolicy in permissions_policy.split(", ")]
                     headerpolicy = [(feature_name, allow_list.strip("()") if "(" in allow_list else allow_list) for feature_name, allow_list in permissions_policy_stripped]
                     headerpolicy = [(feature_name, allow_list if allow_list else "") for feature_name, allow_list in headerpolicy]
 
                 else:
-                    if HasHeaderPolicy == True:
-                        continue
-                    HasHeaderPolicy = False #mesvalue
-                    print("No Permissions Policy Found",str(url))
+                    print("Not the target url",str(request_str))
                     continue
+            
 
 
             # Identify third-party iframes and the features they use
