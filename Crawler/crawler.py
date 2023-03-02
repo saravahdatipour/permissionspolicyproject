@@ -50,6 +50,8 @@ with open('urls.csv') as file:
                     headerpolicy = [(feature_name, allow_list if allow_list else "") for feature_name, allow_list in headerpolicy]
 
                 else:
+                    if HasHeaderPolicy == True:
+                        continue
                     HasHeaderPolicy = False #mesvalue
                     print("No Permissions Policy Found",str(url))
                     continue
