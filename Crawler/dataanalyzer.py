@@ -3,7 +3,7 @@ import pandas as pd
 from openpyxl import Workbook
 
 
-def get_data(url, HasHeaderPolicy, HasInlinePolicy, HasConflict, ConflictedFeatures, NumberOfConflicts,ThirdPartyFrames):
+def get_data(url, HasHeaderPolicy, HasInlinePolicy, HasConflict, ConflictedFeatures, NumberOfConflicts,ThirdPartyDomain):
 
     data = {
         'Website': [url],
@@ -11,8 +11,8 @@ def get_data(url, HasHeaderPolicy, HasInlinePolicy, HasConflict, ConflictedFeatu
         'Inline Policy': [HasInlinePolicy],
         'Conflict': [HasConflict],
         'Number of Conflicts': [NumberOfConflicts],
-        'Conflicted Features': [ConflictedFeatures],
-        'Third Party Frames': [ThirdPartyFrames]
+        'Conflicting Features': [ConflictedFeatures],
+        'Third Party Domains': [ThirdPartyDomain]
     }
 
     df = pd.DataFrame(data)
