@@ -37,8 +37,6 @@ def crawl_csvfile(csvfile):
                     df = append_data(df,url, HasHeaderPolicy, HasInlinePolicy, HasConflict, NumberOfConflicts, conflictingFeature, ThirdPartyDomains)
                     df = save_data(df, FILEPATH)
 
-
-
                 driver.quit()
 
             except Exception as e:
@@ -64,9 +62,6 @@ def crawl_single_url(url):
         else:
             df = append_data(df,url, HasHeaderPolicy, HasInlinePolicy, HasConflict, NumberOfConflicts, conflictingFeature, ThirdPartyDomains)
             df = save_data(df, FILEPATH)
-
-
-
         driver.quit()
 
     except Exception as e:

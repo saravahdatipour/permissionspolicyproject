@@ -35,15 +35,22 @@ def headerpolicy_finder(driver, url, domain):
 
     for request in driver.requests:
         request_str = (str(request))
-        if  request_str in url :
-            logging.info(f"Target url: {request_str}")
-            permissions_policy= request.response.headers.get("Permissions-Policy")
-            logging.info(f"permissions_policy: {permissions_policy}")
-            if permissions_policy != None:
-                HasHeaderPolicy = True #mesvalue
-                permissions_policy_stripped = [headerpolicy.split("=") for headerpolicy in permissions_policy.split(", ")]
-                headerpolicy = [(feature_name, allow_list.strip("()") if "(" in allow_list else allow_list) for feature_name, allow_list in permissions_policy_stripped]
-                headerpolicy = [(feature_name, allow_list if allow_list else "") for feature_name, allow_list in headerpolicy]
+        if  domain in request_str :
+            if request.response.status_code ==200: 
+                logging.info(f"Successful Target url: {request_str}")
+                permissions_policy= request.response.headers.get("Permissions-Policy")
+                logging.info(f"permissions_policy: {permissions_policy}")
+                if permissions_policy != None:
+                    HasHeaderPolicy = True #mesvalue
+                    permissions_policy_stripped = [headerpolicy.split("=") for headerpolicy in permissions_policy.split(", ")]
+                    headerpolicy = [(feature_name, allow_list.strip("()") if "(" in allow_list else allow_list) for feature_name, allow_list in permissions_policy_stripped]
+                    headerpolicy = [(feature_name, allow_list if allow_list else "") for feature_name, allow_list in headerpolicy]
+                    print(f"im here {request_str} {domain} {headerpolicy}")
+
+                    # print(headerpolicy)
+            else:
+                # print(f"skipped condition {request_str} {domain}  {request.response.status_code}")
+                continue
         else:
             logging.info(f"Not the target url: {request_str}")
             continue
