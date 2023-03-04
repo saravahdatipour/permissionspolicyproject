@@ -1,5 +1,6 @@
 from seleniumwire import webdriver
 from selenium.webdriver.common.by import By
+import logging
 
 
 conflictingFeature = []
@@ -35,16 +36,16 @@ def headerpolicy_finder(driver, url, domain):
     for request in driver.requests:
         request_str = (str(request))
         if  request_str in url :
-            print("Target url",str(request_str))
+            logging.info(f"Target url: {request_str}")
             permissions_policy= request.response.headers.get("Permissions-Policy")
-            print("permissions_policy",permissions_policy)
+            logging.info(f"permissions_policy: {permissions_policy}")
             if permissions_policy != None:
                 HasHeaderPolicy = True #mesvalue
                 permissions_policy_stripped = [headerpolicy.split("=") for headerpolicy in permissions_policy.split(", ")]
                 headerpolicy = [(feature_name, allow_list.strip("()") if "(" in allow_list else allow_list) for feature_name, allow_list in permissions_policy_stripped]
                 headerpolicy = [(feature_name, allow_list if allow_list else "") for feature_name, allow_list in headerpolicy]
         else:
-            print("Not the target url",str(request_str))
+            logging.info(f"Not the target url: {request_str}")
             continue
 
     return headerpolicy, HasHeaderPolicy
@@ -69,9 +70,9 @@ def calculate_conflicts(thirdParty_featureDomain,domain,headerpolicy):
     for featuredomain in thirdParty_featureDomain:
         conflictingFeature= check_self_or_none(featuredomain[0],headerpolicy)
     if conflictingFeature != []:
-        print("The following have potential conflicts: " + str(conflictingFeature)+ " On the following website: " + str(domain))
+        logging.info(f"The following have potential conflicts: {conflictingFeature} on this domain {domain}")
         HasConflict = True #mesvalue
         NumberOfConflicts = len(conflictingFeature) #mesvalue
     else:
-        print("No conflicts found on " + str(domain))
+        logging.info(f"fNo conflicts found on {domain}")
     return HasConflict, NumberOfConflicts, conflictingFeature
