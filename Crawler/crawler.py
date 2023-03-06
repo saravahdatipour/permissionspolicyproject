@@ -21,7 +21,7 @@ def crawl_csvfile(csvfile):
         for row in tqdm(rows,mininterval=0.1):
             url = row[1]
             domain = url.replace("https://", "").split("/")[0]
-
+            logger.info(f"domain inspecting now: {domain}")
             try:
                 driver = webdriver.Firefox()
                 driver.get(url)

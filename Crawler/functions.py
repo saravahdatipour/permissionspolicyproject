@@ -37,32 +37,34 @@ def iframefinder(driver):
 #------------------Find Response header permission policies------------------
 
 def headerpolicy_finder(driver, url, domain):
-    headerpolicy = []
+    headerpolicylist = []
     HasHeaderPolicy = False
 
     for request in driver.requests:
         request_str = (str(request))
-        if  domain in request_str :
-            if request.response.status_code ==200: 
-                logger.info(f"Successful Target url: {request_str}")
-                permissions_policy= request.response.headers.get("Permissions-Policy")
-                logger.info(f"permissions_policy: {permissions_policy}")
-                if permissions_policy != None:
-                    HasHeaderPolicy = True #mesvalue
-                    permissions_policy_stripped = [headerpolicy.split("=") for headerpolicy in permissions_policy.split(", ")]
-                    headerpolicy = [(feature_name, allow_list.strip("()") if "(" in allow_list else allow_list) for feature_name, allow_list in permissions_policy_stripped]
-                    headerpolicy = [(feature_name, allow_list if allow_list else "") for feature_name, allow_list in headerpolicy]
-                    # print(f"im here {request_str} {domain} {headerpolicy}")
 
-                    # print(headerpolicy)
+        if  domain in request_str and request.response.status_code ==200 :
+            permissions_policy = request.response.headers.get("Permissions-Policy")
+            if permissions_policy: 
+                if ","  in permissions_policy:
+                    for headerpolicy in permissions_policy.split(", "):
+                        feature_name=  headerpolicy.split("=")[0]
+                        allow_list = headerpolicy.split("=")[1].strip("()") if "(" in headerpolicy.split("=")[1] else headerpolicy.split("=")[1]
+                        #if not the same permission policy is already in the list
+                        if not any(feature_name in sublist for sublist in headerpolicylist):
+                            headerpolicylist.append((feature_name, allow_list))
+                else:
+                    feature_name = permissions_policy.split("=")[0]
+                    allow_list = permissions_policy.split("=")[1].strip("()") if "(" in permissions_policy.split("=")[1] else permissions_policy.split("=")[1]
+                    headerpolicylist.append((feature_name, allow_list))
+
             else:
-                # print(f"skipped condition {request_str} {domain}  {request.response.status_code}")
-                continue
+                logger.info(f"No header policy with response 200 on {domain}")
         else:
             logger.info(f"Not the target url: {request_str}")
             continue
+    return headerpolicylist, HasHeaderPolicy
 
-    return headerpolicy, HasHeaderPolicy
     
 #------------------Find third-party iframes and the features they use------------------
 def featureUsedbyThirdParty(iframe_policy,domain):
