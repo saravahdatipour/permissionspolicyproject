@@ -1,10 +1,11 @@
 import pandas as pd
 import os
 
-def define_df(url, HasHeaderPolicy, HasInlinePolicy, HasConflict, NumberOfConflicts, ConflictedFeatures, ThirdPartyDomain):
+def define_df(url, HasHeaderPolicy,headerpolicy ,HasInlinePolicy, HasConflict, NumberOfConflicts, ConflictedFeatures, ThirdPartyDomain):
     data = {
         'Website': [url],
-        'Header Policy': [HasHeaderPolicy],
+        'Has Header Policy': [HasHeaderPolicy],
+        'Header Policy': [headerpolicy], 
         'Inline Policy': [HasInlinePolicy],
         'Conflict': [HasConflict],
         'Number of Conflicts': [NumberOfConflicts],
@@ -14,8 +15,8 @@ def define_df(url, HasHeaderPolicy, HasInlinePolicy, HasConflict, NumberOfConfli
     df = pd.DataFrame(data)
     return df
 
-def append_data(df, url, HasHeaderPolicy, HasInlinePolicy, HasConflict, NumberOfConflicts, ConflictedFeatures, ThirdPartyDomain):
-    new_row = [url, HasHeaderPolicy, HasInlinePolicy, HasConflict, NumberOfConflicts, ConflictedFeatures, ThirdPartyDomain]
+def append_data(df, url, HasHeaderPolicy,headerpolicy, HasInlinePolicy, HasConflict, NumberOfConflicts, ConflictedFeatures, ThirdPartyDomain):
+    new_row = [url, HasHeaderPolicy,headerpolicy, HasInlinePolicy, HasConflict, NumberOfConflicts, ConflictedFeatures, ThirdPartyDomain]
     new_df = pd.DataFrame([new_row], columns=df.columns)
     df = pd.concat([df, new_df], ignore_index=True)
     return df
