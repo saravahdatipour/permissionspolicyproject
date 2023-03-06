@@ -7,10 +7,10 @@ from functions import iframefinder, headerpolicy_finder, featureUsedbyThirdParty
 from tqdm import tqdm
 import pandas as pd
 import os
-
+from logger import logger
 FILEPATH = 'crawlresults.xlsx'
 # ---------------------------------------------------Main-------------------------------------------------------------
-logging.basicConfig(filename='info.log', level=logging.INFO)
+
 
 def crawl_csvfile(csvfile):
 
@@ -56,12 +56,13 @@ def crawl_single_url(url):
         iframe_policy, HasInlinePolicy, src_value, allow_value = iframefinder(driver)
         ThirdPartyFrames, ThirdPartyDomains = featureUsedbyThirdParty(iframe_policy,domain)
         HasConflict, NumberOfConflicts, conflictingFeature= calculate_conflicts(ThirdPartyFrames,domain,headerpolicy)
-        if not os.path.isfile(FILEPATH): 
-            df = define_df(url, HasHeaderPolicy, HasInlinePolicy, HasConflict, NumberOfConflicts, conflictingFeature, ThirdPartyDomains)
-            df = save_data(df, FILEPATH)
-        else:
-            df = append_data(df,url, HasHeaderPolicy, HasInlinePolicy, HasConflict, NumberOfConflicts, conflictingFeature, ThirdPartyDomains)
-            df = save_data(df, FILEPATH)
+        # if not os.path.isfile(FILEPATH): 
+        #     df = define_df(url, HasHeaderPolicy, HasInlinePolicy, HasConflict, NumberOfConflicts, conflictingFeature, ThirdPartyDomains)
+        #     df = save_data(df, FILEPATH)
+        # else:
+        #     df = append_data(df,url, HasHeaderPolicy, HasInlinePolicy, HasConflict, NumberOfConflicts, conflictingFeature, ThirdPartyDomains)
+        #     df = save_data(df, FILEPATH)
+
         driver.quit()
 
     except Exception as e:
