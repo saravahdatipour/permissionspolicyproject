@@ -6,7 +6,4 @@ Work in progress...
 
 To do:
 
-1. add analysing measures + gathering data on the found conflics
-2. prettify code + add logging + event handling
-3. do a test crawl of 50 and callibrate code 
-4. getting rid of selenium wire console errors (CA Certificate fail)
+1. crawl a large batch of websites to callibrate code. add missing functionalities
