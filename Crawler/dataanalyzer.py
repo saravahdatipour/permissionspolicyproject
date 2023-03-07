@@ -1,22 +1,25 @@
 import pandas as pd
 import os
 
-def define_df(url, HasHeaderPolicy,headerpolicy ,HasInlinePolicy, HasConflict, NumberOfConflicts, ConflictedFeatures, ThirdPartyDomain):
+def define_df(url, HasHeaderPolicy,headerpolicy, HasInlinePolicy,iframe_policy,same_origin_iframe_policy, HasConflict, NumberOfConflicts, conflictingFeature, ThirdPartyDomains,WarningScenario):
     data = {
         'Website': [url],
         'Has Header Policy': [HasHeaderPolicy],
         'Header Policy': [headerpolicy], 
         'Inline Policy': [HasInlinePolicy],
+        'Cross-Origin Iframe Policy':[iframe_policy],
+        'Same-Origin Iframe Policy':[same_origin_iframe_policy],
         'Conflict': [HasConflict],
         'Number of Conflicts': [NumberOfConflicts],
-        'Conflicting Features': [ConflictedFeatures],
-        'Third Party Domains': [ThirdPartyDomain]
+        'Conflicting Features': [conflictingFeature],
+        'Third Party Domains': [ThirdPartyDomains],
+        'Warning Scenario': [WarningScenario]
     }
     df = pd.DataFrame(data)
     return df
 
-def append_data(df, url, HasHeaderPolicy,headerpolicy, HasInlinePolicy, HasConflict, NumberOfConflicts, ConflictedFeatures, ThirdPartyDomain):
-    new_row = [url, HasHeaderPolicy,headerpolicy, HasInlinePolicy, HasConflict, NumberOfConflicts, ConflictedFeatures, ThirdPartyDomain]
+def append_data(df, url, HasHeaderPolicy,headerpolicy, HasInlinePolicy,iframe_policy,same_origin_iframe_policy, HasConflict, NumberOfConflicts, conflictingFeature, ThirdPartyDomain,WarningScenario):
+    new_row = [url, HasHeaderPolicy,headerpolicy, HasInlinePolicy,iframe_policy,same_origin_iframe_policy, HasConflict, NumberOfConflicts, conflictingFeature, ThirdPartyDomain,WarningScenario]
     new_df = pd.DataFrame([new_row], columns=df.columns)
     df = pd.concat([df, new_df], ignore_index=True)
     return df

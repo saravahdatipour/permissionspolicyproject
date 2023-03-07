@@ -1,0 +1,169 @@
+2023-03-07 16:40:21,983 - INFO - This is an informational message.
+2023-03-07 16:40:21,983 - WARNING - This is a warning message.
+2023-03-07 16:40:30,059 - INFO - Not the same domain vandale.nl as the request: https://accounts.google.com/ListAccounts?gpsia=1&source=ChromiumBrowser&json=standard
+2023-03-07 16:40:30,059 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/
+2023-03-07 16:40:30,059 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?rprppa
+2023-03-07 16:40:30,059 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/modules/system/system.messages.css?rprppa
+2023-03-07 16:40:30,059 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/modules/system/system.base.css?rprppa
+2023-03-07 16:40:30,059 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/date/date_api/date.css?rprppa
+2023-03-07 16:40:30,059 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?rprppa
+2023-03-07 16:40:30,059 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?rprppa
+2023-03-07 16:40:30,059 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/modules/system/system.theme.css?rprppa
+2023-03-07 16:40:30,059 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/modules/node/node.css?rprppa
+2023-03-07 16:40:30,059 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/date/date_repeat_field/date_repeat_field.css?rprppa
+2023-03-07 16:40:30,059 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/domain/domain_nav/domain_nav.css?rprppa
+2023-03-07 16:40:30,059 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/features/vandale_events/vandale_events.css?rprppa
+2023-03-07 16:40:30,059 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/features/vandale_search/assets/css/vandale_search.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/modules/search/search.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/custom/vandale_contact/assets/css/vandale_contact.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/modules/poll/poll.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/modules/user/user.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/modules/field/theme/field.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/nice_menus/css/nice_menus.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/nice_menus/css/nice_menus_default.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/css/styles.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/panels/css/panels.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/ctools/css/ctools.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/features/vandale_blocks/css/follow-us.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/features/vandale_blocks/css/word-of-the-day.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/css/bootstrap/bootstrap.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/custom/vandale_popup/assets/css/vandale_popup.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/views/css/views.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/features/vandale_views/css/vandale_views.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/css/vandale.text.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/css/vandale.base.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/css/jquery.ui.selectmenu.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/css/components/misc.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/css/freedictionary-results-v2.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/css/csstrexcustom.css?rprppa
+2023-03-07 16:40:30,060 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/css/vandale.header.css?rprppa
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/css/vandale.footer.css?rprppa
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/css/overrides.css?rprppa
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/misc/drupal.js?rprppa
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.10.2
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/misc/jquery-extend-3.4.0.js?v=1.10.2
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.10.2
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.accordion.min.js?v=1.10.2
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/css/blog_post.css?rprppa
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/css/main-menu.css?rprppa
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/misc/jquery.once.js?v=1.2
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.10.2
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/jquery_update/js/jquery_update.js?v=0.0.1
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/libraries/jquery.bgiframe/jquery.bgiframe.js?v=3.0.1
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/jquery_update/replace/misc/jquery.form.min.js?v=2.69
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/custom/vandale_popup/assets/js/vandale_popup.js?rprppa
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/nice_menus/js/nice_menus.js?v=1.0
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/libraries/superfish/superfish.js?rprppa
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/libraries/jquery.hoverIntent/jquery.hoverIntent.js?rprppa
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/misc/ajax.js?v=7.79
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/default/files/languages/nl_hz25pppNUwwSypN80HSyZo_P0mOSUcTF3kB_oA0nn6w.js?rprppa
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/views/js/base.js?rprppa
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/js/jquery.input_label_handle.js?rprppa
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/js/jquery.jcarousel.min.js?rprppa
+2023-03-07 16:40:30,061 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/views/js/ajax_view.js?rprppa
+2023-03-07 16:40:30,062 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/js/jquery.ui.position.js?rprppa
+2023-03-07 16:40:30,062 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/misc/progress.js?v=7.79
+2023-03-07 16:40:30,062 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/js/jquery.simplemodal.1.4.4.min.js?rprppa
+2023-03-07 16:40:30,062 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/js/jquery-migrate-1.2.1.js?rprppa
+2023-03-07 16:40:30,062 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/js/jquery.ui.selectmenu.js?rprppa
+2023-03-07 16:40:30,062 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/contrib/google_analytics/googleanalytics.js?rprppa
+2023-03-07 16:40:30,062 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/js/jquery.ezmark.min.js?rprppa
+2023-03-07 16:40:30,062 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/js/lucius.js?rprppa
+2023-03-07 16:40:30,062 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/js/addclear.js?rprppa
+2023-03-07 16:40:30,062 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/js/jquery.cycle2.min.js?rprppa
+2023-03-07 16:40:30,062 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/js/scripts.js?rprppa
+2023-03-07 16:40:30,062 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/js/bootstrap.min.js?rprppa
+2023-03-07 16:40:30,062 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/modules/custom/vandale_vwo/vandale_vwo.js?rprppa
+2023-03-07 16:40:30,062 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/css/components/misc.css
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/css/print.css
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://use.fontawesome.com/releases/v5.3.1/css/all.css
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/tt/cookieControl-5.1.min.js
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/default/files/styles/118x118/public/post/image/blog_vervangen_van_dale_1200_x_600_px.png?itok=fHLfX1dw
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/default/files/styles/118x118/public/post/image/wat_is_juist_3.jpg?itok=B2WP9SVT
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/logo.png
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/default/files/van_dale_oefenboeken_woordenschat_-_ww_640_x_480_px.png
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/default/files/banner_webwinkel_taalverhalen_640_x_480_px.png
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/images/home-carousel-link.png
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/images/loginbox-btn.png
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/images/top-bg.jpg
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/images/translate-form-bg.png
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/default/files/styles/118x118/public/post/image/woorden-van-de-week-2023-week-9.jpeg?itok=16__LgYq
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/img/top-bg.jpg
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/img/background-blue.png
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/images/misc-sprite.png
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/images/translate-form-submit.png
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/images/home-carousel-item-content-bg.png
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/img/arrow-down-blue.png
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/images/twitter-icon.png
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/images/facebook-icon.png
+2023-03-07 16:40:30,063 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/default/files/images/dikkevandale-statisch-300x250-v1.jpeg
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/images/instagram-icon-brand.png
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/images/linkedin-icon.png
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/images/youtube-icon.png
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/images/translate-options-selected.jpg
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/tt/ccc-icons.png
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/images/home-carousel-control.png
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/default/files/styles/118x118/public/post/image/woorden-van-de-week-2023-week-8.jpeg?itok=ZXea-OYA
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://cdn.biddercore.io/tagman/WANL/sites/vandale.nl/index.js
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/default/files/styles/118x118/public/post/image/woorden-van-de-week-2023-week-7.jpeg?itok=L8hVkhJk
+2023-03-07 16:40:30,064 - INFO - No response on https://www.vandale.nl/sites/default/files/styles/118x118/public/default_images/brandicon_8.jpg?itok=cdXgdUvl
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/default/files/styles/118x118/public/post/image/omdat_opdat_of_zodat_0.png?itok=7NK63xwM
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/default/files/styles/118x118/public/post/image/woorden-van-de-week-2023-week-5.jpeg?itok=1X0mupNO
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/default/files/styles/118x118/public/post/image/taalpodium_werkzaamheden.jpg?itok=HHblcC_Z
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/default/files/images/van_dale_app_-_google_play_store.png
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/default/files/styles/118x118/public/post/image/woorden-van-de-week-2023-week-4.jpeg?itok=TxvT_P_E
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/default/files/images/van_dale_app_-_app_store.png
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://content-autofill.googleapis.com/v1/pages/ChVDaHJvbWUvMTEwLjAuNTQ4MS4xNzgSFwml9Ij3YXgvGBIFDbw_W5ASBQ1dN98Q?alt=proto
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/img/twitter-icon.png
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/img/facebook-icon.png
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/img/in-icon.png
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/img/background-blue-pager.png
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/img/misc-sprite.png
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/img/vandale-icon-small.png
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://cdn.biddercore.io/tagman/WANL/lib.js
+2023-03-07 16:40:30,064 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/fonts/gentiumplus-r-webfont-webfont.woff
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://www.vandale.nl/sites/all/themes/vandale/fonts/gentiumplus-i-webfont-webfont.woff
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://www.google-analytics.com/analytics.js
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://www.google-analytics.com/ga.js?_=1678203625123
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://cdn.biddercore.io/tagman/WANL/prebid.js
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://www.google-analytics.com/ga.js?_=1678203625122
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://www.google-analytics.com/ga.js?_=1678203625121
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://dev.visualwebsiteoptimizer.com/j.php?a=72856&u=https%3A%2F%2Fwww.vandale.nl%2F&r=0.703515031227741
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://www.google-analytics.com/j/collect?v=1&_v=j99&aip=1&a=1840804242&t=pageview&_s=1&dl=https%3A%2F%2Fwww.vandale.nl%2F&ul=en-gb&de=UTF-8&dt=Home%20%7C%20Van%20Dale&sd=24-bit&sr=1920x1080&vp=912x887&je=0&_u=YEBAAEABAAAAACAAI~&jid=918982223&gjid=50970289&cid=1416450043.1678203627&tid=UA-10061311-1&_gid=1888409374.1678203627&_r=1&_slc=1&z=370378832
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://nojazz.eu/nl/client/vandale.nl/init.js
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://dev.visualwebsiteoptimizer.com/v.gif?cd=0&a=72856&d=vandale.nl&u=DB8668099B49C9E51B34AA6710B7741A9&h=7861d1c264d11e80b4d0006d3a783891&t=false&r=0.2932982582951331
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://www.googletagservices.com/tag/js/gpt.js
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-brands-400.woff2
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://use.fontawesome.com/releases/v5.3.1/webfonts/fa-solid-900.woff2
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://cdn.jsdelivr.net/gh/prebid/currency-file@1/latest.json?date=20230307
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://webads.mgr.consensu.org/cmp/vendor-list.json
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://nojazz.eu/images/consentButton2.png
+2023-03-07 16:40:30,065 - INFO - No response on https://nojazz.eu/nl/zaynabstestcmp/consentui
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://nojazz.eu/nl/zaynabstestcmp/consentui/
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://nojazz.eu/nl/zaynabstestcmp/consentui/icons.css
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://nojazz.eu/nl/zaynabstestcmp/consentui/static/js/2.c291b3a7.chunk.js
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://nojazz.eu/nl/zaynabstestcmp/consentui/static/css/main.97f90a18.chunk.css
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://nojazz.eu/nl/zaynabstestcmp/consentui/static/js/main.90af8784.chunk.js
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://analytics.webads.eu/pixel/?label=5%20::%20RESOLVED%20CONTEXT%20::%20default%20::%20desktop&publisher=STATEOFMIND&domain=vandale.nl&cb=9547236632
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://analytics.webads.eu/pixel/?label=1%20::%20INIT&publisher=STATEOFMIND&domain=vandale.nl&cb=9547236631
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://securepubads.g.doubleclick.net/pagead/ppub_config?ippd=www.vandale.nl
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://securepubads.g.doubleclick.net/gpt/pubads_impl_2023030201.js
+2023-03-07 16:40:30,065 - INFO - no Permissions-Policy header on current request for https://nojazz.eu/nl/zaynabstestcmp/consentui/static/media/arrow_head_right.55c04d89.svg
+2023-03-07 16:40:30,066 - INFO - no Permissions-Policy header on current request for https://nojazz.eu/nl/zaynabstestcmp/consentui/fonts/icomoon.ttf?ikpexy
+2023-03-07 16:40:30,066 - INFO - no Permissions-Policy header on current request for https://nojazz.eu/nl/client/vandale/vandalelogo.png
+2023-03-07 16:40:30,066 - INFO - no Permissions-Policy header on current request for https://nojazz.eu/nl/zaynabstestcmp/consentui/static/media/arrow_head_down.f6ef2acc.svg
+2023-03-07 16:40:30,077 - INFO - iframe found
+2023-03-07 16:40:30,094 - INFO - iframe found: iframe policy: [] has inline policy: True
+2023-03-07 16:40:30,097 - INFO - iframe found
+2023-03-07 16:40:30,107 - INFO - iframe found: iframe policy: [] has inline policy: True
+2023-03-07 16:40:30,110 - INFO - iframe found
+2023-03-07 16:40:30,121 - INFO - iframe found: iframe policy: [] has inline policy: True
+2023-03-07 16:40:30,124 - INFO - iframe found
+2023-03-07 16:40:30,134 - INFO - iframe found: iframe policy: [] has inline policy: True
+2023-03-07 16:40:30,136 - INFO - iframe found
+2023-03-07 16:40:30,146 - INFO - third party iframe has no allow value 
+2023-03-07 16:40:30,146 - INFO - iframe found: iframe policy: [] has inline policy: True
+2023-03-07 16:40:30,147 - INFO - No conflicts found on vandale.nl
