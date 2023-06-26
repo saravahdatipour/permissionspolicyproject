@@ -73,7 +73,7 @@ def headerpolicy_finder(driver, url, domain):
                             #if not the same permission policy is already in the list
                             if not any(feature_name in sublist for sublist in headerpolicylist):
                                 headerpolicylist.append((feature_name, allow_list))
-                    else:
+                    elif not any(feature_name in sublist for sublist in headerpolicylist):
                         feature_name = permissions_policy.split("=")[0]
                         allow_list = permissions_policy.split("=")[1].strip("()") if "(" in permissions_policy.split("=")[1] else permissions_policy.split("=")[1]
                         headerpolicylist.append((feature_name, allow_list))

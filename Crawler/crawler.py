@@ -28,6 +28,8 @@ def crawl_csvfile(csvfile):
             domain = url.replace("https://www.", "").split("/")[0]
             logger.info(f"domain inspecting now: {domain}")
             chrome_options = webdriver.ChromeOptions()
+            WarningScenario = False
+
             # chrome option for not showing devtools
             chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
             chrome_options.add_argument('--ignore-certificate-errors')
@@ -42,22 +44,26 @@ def crawl_csvfile(csvfile):
                 iframe_policy,same_origin_iframe_policy, HasInlinePolicy, src_value, allow_value = iframefinder(driver)
                 ThirdPartyFrames, ThirdPartyDomains = featureUsedbyThirdParty(iframe_policy,domain)
                 HasConflict, NumberOfConflicts, conflictingFeature= calculate_conflicts(ThirdPartyFrames,domain,headerpolicy)
-                WarningScenario = False
-                if HasHeaderPolicy == False and iframe_policy == "":
-                    WarningScenario = True
 
 
                 if not os.path.isfile(FILEPATH): 
+
+                    if HasHeaderPolicy == False and iframe_policy == "":
+                        WarningScenario = True
+
+                    
                     df = define_df(url, HasHeaderPolicy,headerpolicy, HasInlinePolicy,iframe_policy,same_origin_iframe_policy, HasConflict, NumberOfConflicts, conflictingFeature, ThirdPartyDomains,WarningScenario)
                     df = save_data(df, FILEPATH)
                 else:
-                    df = append_data(url, HasHeaderPolicy,headerpolicy, HasInlinePolicy,iframe_policy,same_origin_iframe_policy, HasConflict, NumberOfConflicts, conflictingFeature, ThirdPartyDomains,WarningScenario)
+                    if HasHeaderPolicy == False and iframe_policy == "":
+                        WarningScenario = True
+                    df = append_data(df , url, HasHeaderPolicy,headerpolicy, HasInlinePolicy,iframe_policy,same_origin_iframe_policy, HasConflict, NumberOfConflicts, conflictingFeature, ThirdPartyDomains,WarningScenario)
                     df = save_data(df, FILEPATH)
 
                 driver.quit()
 
             except Exception as e:
-                logging.exception(e)
+                logger.exception(e)
                 driver.quit()
 
 
@@ -90,7 +96,7 @@ def crawl_single_url(url):
         driver.quit()
 
     except Exception as e:
-        logging.exception(e)
+        logger.exception(e)
         driver.quit()
 
 
