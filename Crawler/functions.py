@@ -116,8 +116,6 @@ def calculate_conflicts(thirdParty_featureDomain, domain, headerpolicy):
     HasConflict, NumberOfConflicts, conflictingFeature = False, 0, []
     for featuredomain in thirdParty_featureDomain:
         conflictingFeature = check_self_or_none(featuredomain[0], headerpolicy)
-        print(conflictingFeature)
-        print(featuredomain[0])
         if conflictingFeature != []:
             logger.info(f"The following have potential conflicts: {conflictingFeature} on this domain {domain}")
             HasConflict = True  # message value
