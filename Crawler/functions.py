@@ -6,13 +6,17 @@ from selenium.webdriver.remote.webelement import WebElement
 
 conflictingFeature = []
 #------------------Check if the feature is self or none in header policy but used in the iframe------------------
-def check_self_or_none(featuredomain,headerpolicy):
+def check_self_or_none(featuredomain, headerpolicy):
+    conflictingFeature = []  # Define conflictingFeature within the function scope
     for value in headerpolicy:
-        if (value[1] == '') or (value[1] == 'self'):
-            if value[0] == featuredomain:
+        if value[1] == '' or value[1] == 'self':
+            
+            if value[0] in featuredomain:
+                
                 conflictingFeature.append(value[0])
+    
     return conflictingFeature
-        
+
                 
 
 #------------------Find iframes and iframe permission policies------------------
@@ -108,14 +112,17 @@ def featureUsedbyThirdParty(iframe_policy,domain):
 
 #--------------------------------Find conflicts-----------------------------------
 
-def calculate_conflicts(thirdParty_featureDomain,domain,headerpolicy):
+def calculate_conflicts(thirdParty_featureDomain, domain, headerpolicy):
     HasConflict, NumberOfConflicts, conflictingFeature = False, 0, []
     for featuredomain in thirdParty_featureDomain:
-        conflictingFeature= check_self_or_none(featuredomain[0],headerpolicy)
-    if conflictingFeature != []:
-        logger.info(f"The following have potential conflicts: {conflictingFeature} on this domain {domain}")
-        HasConflict = True #mesvalue
-        NumberOfConflicts = len(conflictingFeature) #mesvalue
-    else:
-        logger.info(f"No conflicts found on {domain}")
+        conflictingFeature = check_self_or_none(featuredomain[0], headerpolicy)
+        print(conflictingFeature)
+        print(featuredomain[0])
+        if conflictingFeature != []:
+            logger.info(f"The following have potential conflicts: {conflictingFeature} on this domain {domain}")
+            HasConflict = True  # message value
+            NumberOfConflicts = len(conflictingFeature)  # message value
+            # Move the subsequent code block inside the if statement
+            return HasConflict, NumberOfConflicts, conflictingFeature
+    logger.info(f"No conflicts found on {domain}")
     return HasConflict, NumberOfConflicts, conflictingFeature
